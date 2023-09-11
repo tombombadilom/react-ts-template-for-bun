@@ -1,18 +1,26 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "strict": false,
-    "forceConsistentCasingInFileNames": true,
-    "noEmit": true,
-    "esModuleInterop": true,
+    // add Bun type definitions
+    "types": ["bun-types"],
+    // enable latest features
+    "lib": ["esnext"],
     "module": "esnext",
-    "moduleResolution": "node",
+    "target": "esnext",
+  
+    // if TS 5.x+
+    "moduleResolution": "bundler",
+    "noEmit": true,
+    "allowImportingTsExtensions": true,
+    "moduleDetection": "force",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve",
+    "jsx": "react-jsx", // support JSX
+    "allowJs": true, // allow importing `.js` from `.ts`
+    "esModuleInterop": true, // allow default imports for CommonJS modules
+     // best practices
+     "strict": true,
+     "forceConsistentCasingInFileNames": true,
+     "skipLibCheck": true,
     "baseUrl": ".",
     "paths": {}
   },
