@@ -48,12 +48,12 @@ Success! tombombadilom/react-ts-template-for-bun loaded into react-ts
 
 # To get started, run:
 
-  cd react-ts
-  bun dev
+* cd react-ts
+* bun dev
 
 ## to build 
-  bun run build
+* bun run build
 
 ## to lint 
-  bun lint
+* bun lint
  
