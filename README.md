@@ -5,7 +5,7 @@ Added:
 * build script
 * lint script
 * bun-types
-* rect-refresh
+* react-refresh
 
 ## Install
 
